@@ -1,0 +1,90 @@
+#h1 {
+    color: #2a7f2a;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#p{
+    color: #2a7f2a;
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.service-info h2 {
+    margin-top: 0;
+}
+
+.service-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-info button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .service img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    main h1, main p {
+        font-size: 1.2em;
+    }
+
+    .service-info h2 {
+        font-size: 1.1em;
+    }
+
+    .service-info p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-info button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,124 @@
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#h1 {
+    color: #2a7f2a;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+#p{
+    color: #2a7f2a;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2a7f2a;
+    margin-bottom: 10px;
+}
+
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-details .icon img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.contact-details .info p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #contact-form button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-details .icon {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 14px;
+    }
+
+    #contact-form button {
+        font-size: 14px;
+    }
+}

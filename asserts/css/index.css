@@ -1,0 +1,421 @@
+.hero {
+    width: 100%;
+    height: 500px;
+    background: url("../img/wp1886356.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.hero .center {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;
+}
+
+
+.hero h1 {
+    font-size: 86px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.hero h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 300px;
+    }
+    .hero h1 {
+        font-size: 22px;
+    }
+    .hero h3 {
+        font-size: 14px;
+    }
+}
+
+.marketplace {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.marketplace .postion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.marketplace .postion div {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.marketplace .postion div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.marketplace .postion img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.marketplace .postion p {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.marketplace h1{
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #2c8b00;
+}
+
+@media (max-width: 768px) {
+    .marketplace .postion {
+        gap: 20px;
+    }
+    .marketplace .postion div {
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marketplace .postion {
+        gap: 15px;
+    }
+    .marketplace .postion div {
+        width: 120px;
+    }
+    .marketplace .postion p {
+        font-size: 14px;
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.main img {
+    width: 40%;
+    height: 300px;
+    border-radius: 8px;
+    margin-right: 25px;
+}
+
+.market {
+    flex: 1;
+}
+
+.market h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.market h3 {
+    font-size: 1.3em;
+    color: #555;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.market button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 230px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.market button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.market button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main img {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .market {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 15px 10px;
+        gap: 20px;
+    }
+
+    .main img {
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .market h1 {
+        font-size: 1.5em;
+    }
+
+    .market h3 {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .market button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-left:0;
+    }
+}
+
+.technology {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.technology h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #2c8b00;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 220px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card button {
+    background-color: #2c8b00;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-card button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.service-card button:hover {
+    background-color: #1f6600;
+}
+
+@media (max-width: 992px) {
+    .services {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.testimonials h1 {
+    font-size: 2em;
+    color: #2c8b00;
+    margin-bottom: 40px;
+}
+
+.farmer-feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.testimonial-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials h1 {
+        font-size: 1.5em;
+    }
+
+    .testimonial-card p {
+        font-size: 0.95em;
+    }
+}
+
+.insights {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.insights h1 {
+    font-size: 2em;
+    color: #2c8b00;
+    margin-bottom: 15px;
+}
+
+.insights p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .insights h1 {
+        font-size: 1.5em;
+    }
+
+    .insights p {
+        font-size: 1em;
+    }
+}
+

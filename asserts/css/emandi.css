@@ -1,0 +1,119 @@
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 32px;
+    color: green;
+    margin-bottom: 25px;
+}
+
+#introduction {
+    margin-bottom: 60px;
+}
+
+#introduction p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#introduction img {
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#applications {
+    margin-bottom: 40px;
+}
+
+.application {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.application-item {
+    flex: 1 1 300px;
+    background: #f5f9f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.application-item h3 {
+    color: green;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.application-item p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.application img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    main h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .application {
+        flex-direction: column;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    #introduction p,
+    .application-item p {
+        font-size: 14px;
+    }
+
+    .application img {
+        max-width: 100%;
+    }
+    .application-item{
+        flex:1;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 20px 15px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .application-item h3 {
+        font-size: 18px;
+    }
+
+    #introduction p,
+    .application-item p {
+        font-size: 13px;
+    }
+
+    .application-item{
+        flex:1;
+    }
+}

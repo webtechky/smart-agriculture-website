@@ -1,0 +1,168 @@
+#AgrtiPlace {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+#AgrtiPlace h1 {
+    color: green;
+    font-size: 2em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+}
+
+#introduction {
+    margin-bottom: 50px;
+}
+
+#introduction p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#introduction img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#features {
+    margin-bottom: 50px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+}
+
+.feature-item p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.feature img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.agribhumi {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5fff5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.agribhumi h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.agribhumi p {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    .feature {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #AgrtiPlace h1 {
+        font-size: 1.6em;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+    }
+
+    .feature img {
+        height: 250px;
+    }
+
+    #introduction img,
+    main > img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #AgrtiPlace h1 {
+        font-size: 1.4em;
+    }
+
+    #introduction p,
+    .feature-item p {
+        font-size: 0.95em;
+    }
+
+    #introduction img,
+    main > img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .agribhumi {
+        padding: 20px;
+    }
+
+    .agribhumi h2 {
+        font-size: 1.6em;
+    }
+
+    .agribhumi p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .agribhumi h2 {
+        font-size: 1.4em;
+    }
+
+    .agribhumi p {
+        font-size: 0.95em;
+    }
+}
